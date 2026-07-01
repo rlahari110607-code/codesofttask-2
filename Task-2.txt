@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Landing Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+body{
+    background:#0b0b0b;
+    color:white;
+    overflow-x:hidden;
+}
+body::before{
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:radial-gradient(circle,#6c63ff,transparent);
+    top:-200px;
+    left:-200px;
+    filter:blur(150px);
+    z-index:-1;
+}
+nav{
+    width:100%;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+.logo{
+    font-size:28px;
+    font-weight:700;
+    background:linear-gradient(90deg,#6c63ff,#00d4ff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+nav ul li a:hover{
+    color:#00d4ff;
+}
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 10%;
+}
+.hero-content h1{
+    font-size:70px;
+    line-height:1.2;
+    background:linear-gradient(90deg,#6c63ff,#00d4ff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+.hero-content p{
+    margin-top:20px;
+    font-size:18px;
+    color:#bbb;
+    line-height:1.8;
+}
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 35px;
+    border-radius:30px;
+    background:linear-gradient(90deg,#6c63ff,#00d4ff);
+    color:white;
+    text-decoration:none;
+    transition:0.4s;
+}
+.btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 20px #6c63ff;
+}
+section{
+    padding:100px 10%;
+}
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+.glass{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:30px;
+    transition:0.4s;
+}
+.glass:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(108,99,255,0.5);
+}
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+.feature h3{
+    margin-bottom:15px;
+    color:#00d4ff;
+}
+.feature p{
+    color:#bbb;
+    line-height:1.7;
+}
+.about{
+    text-align:center;
+}
+.about p{
+    color:#bbb;
+    line-height:1.9;
+    font-size:17px;
+}
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+.service-card h3{
+    margin-bottom:15px;
+    color:#00d4ff;
+}
+.service-card p{
+    color:#bbb;
+    line-height:1.7;
+}
+.contact{
+    text-align:center;
+}
+.contact p{
+    margin:15px 0;
+    color:#bbb;
+}footer{
+    text-align:center;
+    padding:25px;
+    background:#111;
+    color:#888;
+}
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:45px;
+    }
+    nav ul{
+        gap:12px;
+    }
+    .section-title{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+<body>
+<nav>
+    <div class="logo">
+     AI Vision
+    </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>
+          Future of Artificial Intelligence
+<br>
+        </h1>
+        <p>Build smarter solutions with Artificial Intelligence, Machine Learning and modern web technologies.
+  </p>
+        <a href="#features" class="btn">
+            Explore AI        </a>
+    </div>
+</section>
+<section id="features">
+    <h2 class="section-title">
+        Features
+    </h2>
+    <div class="features-grid">
+        <div class="glass feature">
+            <h3>Machine Learning
+                            </h3>
+            <p>Intelligent systems that learn from data and improve automatically over time.</p>
+        </div>
+        <div class="glass feature">
+            <h3>AI Chatbots
+                            </h3>
+            <p> Smart conversational bots for customer support and automation.</p>
+        </div>
+        <div class="glass feature">
+            <h3>Data Analysis</h3>
+            <p>Analyze huge amounts of data and generate meaningful business insights.</p>
+        </div>
+        <div class="glass feature">
+<h3>Deep Learning</h3>
+            <p>Advanced form of ML taht uses neural networks for imagr recognition,speech rercognition.</p>
+        </div>
+<div class="glass feature">
+            <h3>Robotics</h3>
+            <p>AI Powered Robots perform tasks automatically in Industries,Hospitals and homes</p>
+        </div>
+</div>
+</section>
+<section class="about">
+    <h2 class="section-title">
+        About AI Vision
+    </h2>
+    <div class="glass">
+        <p>
+            AI Vision enables machines to understand and analyze images and videos just like humans. It uses advanced technologies like Computer Vision and Deep Learning to detect objects, recognize faces, read text, and make intelligent visual decisions in real time. It transforms visual data into intelligent insights. From facial recognition to autonomous systems, our AI-powered vision technology helps businesses automate detection, monitoring, and decision-making with speed and accuracy.
+<br>
+✔ Face Recognition.
+<br><br>
+✔ Object Detection.
+<br>
+✔ Image Analysis.
+<br>
+✔ Smart Automation.
+<br>
+✔ Real-time Processing.
+        </p>
+    </div>
+</section>
+<section id="services">
+    <h2 class="section-title">
+        Our AI Services
+    </h2>
+    <div class="services-grid">
+        <div class="glass service-card">
+            <h3>AI Development
+                           </h3>
+            <p>Build intelligent AI systems using modern machine learning technologies.</p>
+        </div>
+        <div class="glass service-card">
+            <h3>Web Integration
+                            </h3>
+            <p>Integrate AI tools into responsive and modern web applications.</p>
+        </div>
+        <div class="glass service-card">
+            <h3>Automation
+                            </h3>
+            <p>Automate repetitive tasks using smart AI-based workflows and systems.</p>  
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <h2 class="section-title">
+        Contact Us
+    </h2>
+    <div class="glass">
+        <p>
+            📧 Email: contact@example.com
+        </p>
+        <p>
+            📱 Phone: +91 7981729662</p>
+        <p>
+            📍 India
+        </p>
+        <a href="#" class="btn">
+            Contact Now
+        </a>
+    </div>
+</section>
+<footer>
+    © 2026 AI Vision 
+</footer>
+</body>
+</html>
